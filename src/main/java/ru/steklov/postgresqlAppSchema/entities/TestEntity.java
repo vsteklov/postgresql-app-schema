@@ -1,23 +1,21 @@
 package ru.steklov.postgresqlAppSchema.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name="testtable")
 public class TestEntity {
 
     @Id
-    Integer id;
+    long id;
 
     String value;
 
-    public Integer getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(long id) {
         this.id = id;
     }
 
