@@ -1,0 +1,8 @@
+spring:
+  liquibase:
+    defaultSchema: test_schema
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/test_db
+    username: test
+    password: test
